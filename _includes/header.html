@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" type="image/x-icon">
-    
+    <title>{{ site.name }} &mdash; {{ site.title }}</title>
+    <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" type="image/x-icon">    
+
     <!-- Fonts -->    
     <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-Gilroy.css" | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-Gilroy-ExtraBold.css" | relative_url }}">
@@ -15,6 +16,8 @@
     
     <!-- Animate -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {% seo %}
+    {%- feed_meta -%}
 </head>
 <body {% if page.id %} id="{{ page.id }}" {% endif %} class="{{ page.layout }}">
 
