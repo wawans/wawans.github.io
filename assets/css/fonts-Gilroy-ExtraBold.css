@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.otf') format('opentype'),
+    url('../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff') format('woff'), url('../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.ttf') format('truetype'), url('../fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

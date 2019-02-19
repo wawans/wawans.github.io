@@ -1,0 +1,513 @@
+--- 
+--- 
+
+
+// start content
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-family: 'Gilroy', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: white
+}
+
+body {
+    background: #1A315B
+}
+
+body .standard-logo {
+    display: none
+}
+
+body .white-logo {
+    display: block
+}
+
+body.invert {
+    background: white;
+    color: #1A315B
+}
+
+body.invert .standard-logo {
+    display: block
+}
+
+body.invert .white-logo {
+    display: none
+}
+
+body.invert .menu a:hover {
+    color: #1A5FF8
+}
+
+body.invert .bottom-left {
+    color: #1A315B
+}
+
+body.invert .bottom-left span {
+    color: #5F6F8C
+}
+
+body.invert .bottom-right {
+    color: #5F6F8C
+}
+
+body.invert .bottom-right span {
+    color: #1A315B
+}
+
+body.invert .bottom-right a:hover {
+    color: #1A5FF8
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+
+a {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none
+}
+
+strong {
+    font-weight: bold
+}
+
+.pill {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-backface-visibility: hidden;
+    transition-timing-function: ease-in-out;
+    display: inline-block;
+    border-radius: 36px;
+    font-size: 16px;
+    border: 2px solid #1A5FF8;
+    color: #1A5FF8;
+    background: none;
+    line-height: 19px;
+    font-weight: bold;
+    padding: 19px 32px 23px 32px;
+    text-decoration: none;
+    margin-top: 20px
+}
+
+.pill:hover {
+    background: #1A5FF8;
+    color: white
+}
+
+h1 {
+    display: none
+}
+
+h2 {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white
+}
+
+h2.page-title {
+    margin-top: 140px;
+    max-width: 550px;
+    color: #1A315B
+}
+
+@media only screen and (max-width: 540px) {
+    h2 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 20px
+    }
+}
+
+h3 {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-backface-visibility: hidden;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 30px 0 20px 0
+}
+
+@media only screen and (max-width: 1024px) {
+    h3 {
+        font-size: 24px;
+        line-height: 42px
+    }
+}
+
+.spacing-bottom {
+    margin-bottom: 200px
+}
+
+@media only screen and (max-width: 540px) {
+    .spacing-bottom {
+        margin-bottom: 100px
+    }
+}
+
+.spacing-top {
+    margin-top: 200px
+}
+
+@media only screen and (max-width: 540px) {
+    .spacing-top {
+        margin-top: 100px
+    }
+}
+
+.small-width,
+.medium-width,
+.large-width {
+    padding: 0 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.small-width {
+    max-width: 770px
+}
+
+.medium-width {
+    max-width: 860px
+}
+
+.large-width {
+    max-width: 990px
+}
+
+.center-text {
+    text-align: center
+}
+
+header {
+    z-index: 10;
+    position: relative;
+    margin: 60px 0
+}
+
+header.sticky {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+@media only screen and (max-width: 768px) {
+    header.sticky {
+        position: relative
+    }
+}
+
+header .logo {
+    font-family: 'Gilroy-ExtraBold', 'Gilroy', sans-serif;
+    width: auto;
+    height: auto;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+
+header .logo svg {
+    width: 100%;
+    height: auto
+}
+
+header .menu {
+    float: right
+}
+
+@media only screen and (max-width: 540px) {
+    header .menu {
+        float: none;
+        clear: both
+    }
+}
+
+header .menu ul {
+    list-style: none
+}
+
+header .menu ul:after {
+    clear: both;
+    content: '';
+    display: table
+}
+
+header .menu ul li {
+    float: left;
+    margin-left: 35px;
+    margin-top: -5px
+}
+
+@media only screen and (max-width: 540px) {
+    header .menu ul li {
+        margin-left: 20px
+    }
+}
+
+header .menu ul li:first-of-type {
+    margin-left: 0
+}
+
+header .menu ul li a {
+    font-size: 12px;
+    line-height: 20px;
+    color: #5F6F8C;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+header .menu ul li a:hover {
+    color: white
+}
+
+header .menu ul li a:focus {
+    color: white
+}
+
+header .menu ul li a:active {
+    color: white
+}
+
+.wrap {
+    padding: 0 100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100vw
+}
+
+.wrap:after {
+    clear: both;
+    content: '';
+    display: table
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrap {
+        padding: 0 50px
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .wrap {
+        padding: 0 30px
+    }
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+@media only screen and (max-width: 768px) {
+    .intro {
+        position: relative;
+        height: auto;
+        transform: none;
+        left: auto
+    }
+}
+
+.intro .center-it {
+    max-width: 940px;
+    text-align: left
+}
+
+@media only screen and (min-width: 768px) {
+    .intro .center-it {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+}
+
+.intro .center-it p {
+    max-width: 800px
+}
+
+.intro .center-it .app {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative
+}
+
+.intro .center-it .app .background {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-size: 36px 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1)
+}
+
+.intro .center-it .app .background:hover {
+    transform: scale(1.1)
+}
+
+.intro .center-it .app:hover {
+    background-size: 42px 56px
+}
+
+.intro .center-it .app:first-of-type {
+    margin-left: 0
+}
+
+.intro .center-it .app.empty {
+    cursor: default
+}
+
+.intro .center-it .app.empty .background {
+    background-color: #243a63;
+    background-size: 30px 30px
+}
+
+.intro .center-it .app.empty .background:hover {
+    transform: scale(1)
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 50px 0 30px 0
+}
+
+footer.sticky {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+@media only screen and (max-width: 768px) {
+    footer.sticky {
+        position: relative
+    }
+}
+
+footer {
+    a {
+    color: inherit;
+    text-decoration: underline;
+    }
+
+    .bottom-left {
+        float: left;
+        font-size: 12px;
+        line-height: 20px;
+        //color: white;
+        color: #5F6F8C;
+        margin-top: 14px;
+
+        span {
+            display: block;
+            color: #5F6F8C;
+            font-size: 10px;
+            line-height: 18px;
+            margin-top: 8px
+        }
+
+        a:hover {
+            color: #1A5FF8
+        }
+    }
+
+    .bottom-right {
+        float: right;
+        text-align: right;
+        font-size: 12px;
+        line-height: 20px;
+        color: #5F6F8C;
+        margin-top: 14px;
+
+        span {
+            display: block;
+            color: white
+        }
+
+        a {
+            display: block;            
+            font-size: 10px;
+            line-height: 18px;
+            margin-top: 8px;
+
+            .octicon {
+                color: #5F6F8C;
+            }
+
+        &:hover {
+
+            .octicon {
+                color: #FFF;
+            }
+
+        }
+    }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    footer .bottom-left {
+        float: none;
+        display: block;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer .bottom-right {
+        float: none;
+        display: none; // block
+        //text-align: left;
+        //margin-top: 30px
+    }
+}

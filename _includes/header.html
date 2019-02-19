@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" type="image/x-icon">
+    
+    <!-- Fonts -->    
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-Gilroy.css" | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/fonts-Gilroy-ExtraBold.css" | relative_url }}">
+
+    <!-- Stylesheet !-->
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/index.css" | relative_url }}">   
+    
+    <!-- Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body {% if page.id %} id="{{ page.id }}" {% endif %} class="{{ page.layout }}">
+
+    <header class="sticky">
+        <div class="wrap">
+            <a href="{{ "/" | relative_url }}" class="logo" data-aos="fade-right" data-aos-duration="600">
+                <div class="white-logo">
+                    <h2>{{ site.name }}</h2>
+                </div>
+            </a>
+
+            <div data-aos="fade-left" data-aos-duration="600">
+                <div class="menu">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a
+                                href="{{ "/about" | relative_url }}">About</a></li>
+                        <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a
+                                href="{{ "/blog" | relative_url }}">Blog</a></li>
+                        <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a
+                                href="mailto:{{ site.email }}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
